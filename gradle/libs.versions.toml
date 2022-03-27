@@ -1,0 +1,2 @@
+[libraries]
+sqliteSource = "sqlite:amalgamation:3380200"

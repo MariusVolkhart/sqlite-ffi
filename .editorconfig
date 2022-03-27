@@ -1,0 +1,14 @@
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 120
+# Tabs for accessibility: https://web.archive.org/web/20210703112303/https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/
+indent_style = tab
+
+ij_kotlin_imports_layout = *,java.**,javax.**,kotlin.**,^
+
+[*.{yml,yaml}]
+indent_size = 2
+tab_width = 2

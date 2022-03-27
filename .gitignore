@@ -1,0 +1,26 @@
+####
+# Gradle folder
+#
+.gradle
+
+####
+# IntelliJ
+#
+.idea/
+
+####
+# Build folder
+#
+out/
+reports
+build/
+
+####
+# IML files
+#
+*.iml
+
+####
+# Mac Files
+#
+.DS_Store

@@ -32,13 +32,13 @@ jobs:
         distribution: jdkfile
         jdkFile: ${{ env.JDK_FILE }}
 
-    - uses: burrunan/gradle-cache-action@cbdf4342ff988d143aa7a5aeceedffafb8c74bcf #v1.10
+    - uses: burrunan/gradle-cache-action@f9ec73cf67dd8ed9a057978212c988945b2f0405 #v1.15
       name: Build with Gradle
       with:
         read-only: ${{ github.ref != 'refs/heads/main' && !contains(github.ref, 'release/') }}
         arguments: build
 
-    - uses: burrunan/gradle-cache-action@cbdf4342ff988d143aa7a5aeceedffafb8c74bcf #v1.10
+    - uses: burrunan/gradle-cache-action@f9ec73cf67dd8ed9a057978212c988945b2f0405 #v1.15
       name: Publish Maven artifacts
       if: ${{ github.ref == 'refs/heads/main' || contains(github.ref, 'release/') }}
       with:

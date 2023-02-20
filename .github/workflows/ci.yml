@@ -64,6 +64,6 @@ jobs:
           path: test-results
 
       - name: Publish Test Results
-        uses: mikepenz/action-junit-report@47c2b1d0baf4e9cd2e03bdf29325f1e9ec28994a
+        uses: mikepenz/action-junit-report@4604e7ac662394db76b6ccf33d40069c8f84c5da
         with:
           report_paths: test-results/**/*.xml

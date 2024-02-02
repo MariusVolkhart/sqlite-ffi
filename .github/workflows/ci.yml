@@ -21,6 +21,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - uses: engineerd/configurator@dc6b312d89ab097f73f3ebbf507a69dd7399c5d0 #v0.10.0
+      with:
+        name: 'jextract'
+        url: 'https://download.java.net/java/early_access/jextract/1/openjdk-21-jextract+1-2_linux-x64_bin.tar.gz'
+        pathInArchive: 'jextract-21/bin/jextract'
+
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:

@@ -21,5 +21,5 @@ repositories {
 }
 
 dependencies {
-	implementation("gradle.plugin.io.github.krakowski:gradle-jextract:0.2.5")
+	implementation("gradle.plugin.io.github.krakowski:gradle-jextract:0.4.1")
 }

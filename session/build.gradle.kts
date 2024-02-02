@@ -60,7 +60,7 @@ tasks.withType<JextractTask> {
 			"sqlite3changeset_pk",
 		)
 
-		macros.addAll(
+		definedMacros.addAll(
 			"SQLITE_CHANGESETAPPLY_INVERT",
 			"SQLITE_CHANGESETAPPLY_NOSAVEPOINT",
 			"SQLITE_CHANGESETSTART_INVERT",

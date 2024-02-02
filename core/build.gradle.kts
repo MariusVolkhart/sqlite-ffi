@@ -92,7 +92,7 @@ tasks.withType<JextractTask> {
 			"sqlite3_wal_hook",
 		)
 
-		macros.addAll(
+		definedMacros.addAll(
 			"SQLITE_ABORT",
 			"SQLITE_AUTH",
 			"SQLITE_BUSY",

@@ -31,7 +31,7 @@ jobs:
       shell: sh
       run: |
         wget -qO- https://download.java.net/java/early_access/jextract/1/openjdk-21-jextract+1-2_linux-x64_bin.tar.gz | tar xvz
-        echo "$PWD/jextract-21/bin/jextract;" >> $GITHUB_PATH
+        echo "$PWD/jextract-21/bin/jextract" >> $GITHUB_PATH
 
     - uses: burrunan/gradle-cache-action@a54b6ce2cbbba932e5d142129dddef103e6ad143 #v1.19
       name: Build with Gradle

@@ -33,13 +33,13 @@ jobs:
         wget -qO- https://download.java.net/java/early_access/jextract/1/openjdk-21-jextract+1-2_linux-x64_bin.tar.gz | tar xvz
         echo "$PWD/jextract-21/bin" >> $GITHUB_PATH
 
-    - uses: burrunan/gradle-cache-action@a54b6ce2cbbba932e5d142129dddef103e6ad143 #v1.19
+    - uses: burrunan/gradle-cache-action@c15634bb25b7284dc084f38dff4e838048b7feaf # v1.22
       name: Build with Gradle
       with:
         read-only: ${{ github.ref != 'refs/heads/main' && !contains(github.ref, 'release/') }}
         arguments: build
 
-    - uses: burrunan/gradle-cache-action@a54b6ce2cbbba932e5d142129dddef103e6ad143 #v1.19
+    - uses: burrunan/gradle-cache-action@c15634bb25b7284dc084f38dff4e838048b7feaf # v1.22
       name: Publish Maven artifacts
       if: ${{ github.ref == 'refs/heads/main' || contains(github.ref, 'release/') }}
       with:
